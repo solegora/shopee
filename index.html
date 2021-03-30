@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Shopee</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarExample01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li class="container-bars">
+            <li class="container-bars" id="container-bars">
               <i class="fas fa-bars"></i>
             </li>
 
@@ -102,13 +102,9 @@
   <!--Main layout-->
   <main class="my-5">
     <div class="container">
-      <!--Grid row-->
       <div class="row">
-        <!--Grid column-->
         <div class="col-md-9 mb-4">
-          <!--Section: Content-->
           <section>
-            <!-- Post -->
             <div class="row">
               <div class="col-md-4 mb-4">
               </div>
@@ -118,15 +114,13 @@
             </div>
 
           </section>
-          <!--Section: Content-->
         </div>
 
 
       <div class="container bread">
 
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">             
+      <div class="col-md-12">             
        <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Cellphones</a></li>
@@ -146,25 +140,34 @@
                 <div class="form-group has-feedback">
             		<label for="search" class="sr-only">Search</label>
             		<input type="text" class="form-control" name="search" id="search" placeholder="search">
-              		<i class="fas fa-search form-control-feedback"></i>
             	</div>
             </form>
         </div>
 
-        <div class="col-md-3">
-          <div class="button-group">
-            <i id="icon"></i>
-            <a id="input" href="">All Departments</a>
+        <div class="col-md-3 mb-3">
+          <div class="button-group department">
+            <div class="mdc-touch-target-wrapper">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label alldep">All Departments<i class="fas fa-angle-down"></i></span>
+                <span class="mdc-button__touch"></span>
+              </button>
+            </div>
               <ul id="dropdown-menu">
                 <li><a href="#">Action</a></li>
               </ul>
             </div>
         </div>
 
-        <div class="col-md-2">
-        <div class="button-group">
-            <i id="icon"></i>
-            <a id="input" href="">Sort by Department</a>
+        <div class="col-md-2 mb-2">
+        <div class="button-group sort">
+            <div class="mdc-touch-target-wrapper">
+              <button class="mdc-button mdc-button--touch">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label sortby">Sort by Department<i class="fas fa-angle-down"></i></span>
+                <span class="mdc-button__touch"></span>
+              </button>
+            </div>
               <ul id="dropdown-menu">
                 <li><a href="#">Action</a></li>
               </ul>
@@ -175,8 +178,9 @@
 </div>
 
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10 card-display">             
+
+      <div class="col-md-12 card-display">     
+        <div class="col-1"></div>        
         <div class="card">
           <div class="card-body">
             <p class="card-text">CELLPHONE.</p>
@@ -184,7 +188,7 @@
         </div>
         <div class="card">
           <div class="card-body">
-            <p class="card-text">ACCESSORIES.</p>
+            <p class="card-text">CELL ACCESSORIES.</p>
           </div>
         </div>
         <div class="card">
@@ -223,16 +227,13 @@
   </div>
 
   <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
+    <div class="col-md-12">
       <hr/>
     </div>
     </div>
 
     <div class="row">
-      <div class="col-md-1">
-      </div>
-      <div class="col-9">
+      <div class="col-md-9">
         <div id="wrapper">
           <div id="first">Polaroid SA</div>
           <div id="second">
@@ -244,9 +245,7 @@
 
 
       <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-3">
+        <div class="col-md-4 mb-4">
           <div id="wrapper">
             <h3>Polaroid Single Touch Active Smart Watch</h3>
       <p> Ships in 5-7 work days </p>
@@ -270,7 +269,7 @@
         <div class="col-md-4">
          <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1107&q=80" width="100%" height="100%"/>
         </div>
-<div class="col-md-3">
+        <div class="col-md-4 mb-4">
   <div class="card">
 
     <div class="card-body">
@@ -294,19 +293,26 @@
           <div class="mdc-tab-scroller__scroll-area">
             <div class="mdc-tab-scroller__scroll-content">
               <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <div id="first_tab">
                 <span class="mdc-tab__content">
                   <span class="mdc-tab__text-label">Description</span>
                 </span>
                 <span class="mdc-tab-indicator mdc-tab-indicator--active">
                   <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                 </span>
+                </div>
+                <div id="second_tab">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__text-label">Product info</span>
+                </span>
+                </div>
                 <span class="mdc-tab__ripple"></span>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <p class="download">Download the POLAROID ACTIVE APP,switch bluetooth ff on your mobile phone Open the app and select the watch icon in the bottom center on the screen Click on "ADD DEVICE" Find your watch model and select it A message will come up asking you to give</p>
+      <p class="download">Download the POLAROID ACTIVE APP,switch bluetooth on your mobile phone Open the app and select the watch icon in the bottom center on the screen Click on "ADD DEVICE" Find your watch model and select it A message will come up asking you to give</p>
     </div>
   </div>
 </div>

@@ -6,6 +6,15 @@
     color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  #container-bars {
+   display: none;
+  }
+  .card-display  {
+    display: block;
+  }
+}
+
 .logout span {
     color: red;
 }
@@ -43,7 +52,7 @@
     .search-form .form-group {
         float: right !important;
         transition: all 0.35s, border-radius 0s;
-        width: 32px;
+        width: 100px;
         height: 32px;
         background-color: #fff;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
@@ -73,7 +82,7 @@
       }
       .search-form .form-group:hover,
       .search-form .form-group.hover {
-        width: 80%;
+        width: 100%;
         border-radius: 4px 25px 25px 4px;
       }
       .search-form .form-group i.form-control-feedback {
@@ -130,7 +139,6 @@
   }
   #dropdown-menu {
     position: absolute;
-    /* top: -1em; */
     right: 0;
     left: 0;
     margin: 1em auto;
@@ -186,7 +194,7 @@
     overflow: hidden;
 }
 #first {
-    width: 220px;
+    width: 30%;
     float:left; 
     color: red;
     font-weight: bold;
@@ -194,6 +202,10 @@
 #second {
     overflow: hidden;
 }
+
+#first_tab {
+  width: 100%;
+} 
 
 .checked {
     color: orange;
@@ -228,4 +240,25 @@
 
   .mdc-tab-indicator .mdc-tab-indicator__content--underline {
       color: red !important;
+  }
+
+  .department {
+    background-color: antiquewhite;
+    margin: -6px auto;
+    border-radius: 50px;
+  }
+
+  .sort {
+    background-color: turquoise;
+    margin: -6px auto;
+    border-radius: 50px;
+  }
+
+  .mdc-button__label.alldep {
+    color: #000 !important;
+    padding: 20px;
+  }
+  .mdc-button__label.sortby {
+    color: #000 !important;
+    padding: 8px;
   }
